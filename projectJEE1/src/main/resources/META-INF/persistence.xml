@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="projectJEE1" transaction-type="JTA">
+	
+	<jta-data-source>projectJEE1DS</jta-data-source>
+	<class>it.unifi.dinfo.stdlab.projectJEE1.model.Anagrafica</class>
+	<class>it.unifi.dinfo.stdlab.projectJEE1.model.Arbitro</class>
+	<class>it.unifi.dinfo.stdlab.projectJEE1.model.Calendario</class>
+	<class>it.unifi.dinfo.stdlab.projectJEE1.model.Designatore</class>
+	<class>it.unifi.dinfo.stdlab.projectJEE1.model.Designazione</class>
+	<class>it.unifi.dinfo.stdlab.projectJEE1.model.Partita</class>
+	<class>it.unifi.dinfo.stdlab.projectJEE1.model.Referto</class>
+	<class>it.unifi.dinfo.stdlab.projectJEE1.model.Squadra</class>
+	<class>it.unifi.dinfo.stdlab.projectJEE1.model.User</class>
+	
+	<exclude-unlisted-classes>true</exclude-unlisted-classes>
+	
+	<properties>
+	
+                    <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+                    <property name="hibernate.show_sql" value="true"/>
+                    <property name="hibernate.format_sql" value="true"/>
+                    <property name="hibernate.default_batch_fetch_size" value="16"/>                            
+                    <property name="hibernate.use_sql_comments" value="true"/>
+                    <property name="hibernate.jdbc.batch_size" value="100"/>
+                
+                    <property name="hibernate.order_insert" value="true"/>
+					<property name="hibernate.order_updates" value="true"/>
+                    <property name="hibernate.id.new_generator_mappings" value="true"/>
+
+                    <property name="hibernate.hbm2ddl.auto" value="update"/>
+                    
+                </properties>
+	
+	</persistence-unit>
+</persistence>
