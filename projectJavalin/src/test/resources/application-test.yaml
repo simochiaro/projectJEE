@@ -1,0 +1,4 @@
+ebean:
+    platform: mariadb
+    ddlMode: dropCreate 
+    dbName: myapp
