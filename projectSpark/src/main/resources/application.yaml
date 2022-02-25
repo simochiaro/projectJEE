@@ -1,0 +1,14 @@
+ebean:
+ ddl:
+  create: true
+  run: true
+   
+  
+   
+datasource:
+  db:
+    username: myapp
+    password: simone1997
+    url: jdbc:mariadb://localhost:3306/myapp
+
+
